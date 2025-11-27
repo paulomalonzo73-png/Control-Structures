@@ -24,7 +24,6 @@ $category = match($choco) {
     default              => "Hmm, we don't recognize that chocolate — not in our list.",
 };
 
-// Output the category with a little human tone
 echo "<p>Here's what we have for it: $category</p>";
 ?>
 
@@ -32,3 +31,4 @@ echo "<p>Here's what we have for it: $category</p>";
 
 </body>
 </html>
+
