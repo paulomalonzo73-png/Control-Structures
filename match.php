@@ -14,17 +14,18 @@
 <?php
 $choco = "Chocolate Bounty";
 
-echo "<p>You selected: <strong>$choco</strong></p>";
+echo "<p>Looks like you picked: <strong>$choco</strong>.</p>";
 
 $category = match($choco) {
     "Chocolate Nut"      => "Nutty Chocolate — Crunchy and flavorful.",
     "Chocolate Snickers" => "Caramel & Nuts — A perfect energy bar.",
     "Chocolate Choc"     => "Pure Milk Chocolate — Smooth and creamy.",
     "Chocolate Bounty"   => "Coconut Chocolate — Sweet and tropical.",
-    default              => "Unknown chocolate — Not in our list.",
+    default              => "Hmm, we don't recognize that chocolate — not in our list.",
 };
 
-echo "<p>Category: $category</p>";
+// Output the category with a little human tone
+echo "<p>Here's what we have for it: $category</p>";
 ?>
 
 <?php include 'footer.php'; ?>
